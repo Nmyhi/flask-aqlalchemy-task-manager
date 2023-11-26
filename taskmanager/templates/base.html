@@ -9,18 +9,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
-      type="text/css"
-    />
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
     <title>Task Manager</title>
   </head>
   <body>
@@ -29,12 +20,10 @@
       <nav class="light-blue darken-1">
         <div class="nav-wrapper">
           <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="fas fa-bars"></i
-          ></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('add_task') }}">New Task</a></li>
             <li><a href="{{ url_for('categories') }}">Categories</a></li>
           </ul>
         </div>
@@ -43,7 +32,7 @@
       <!--Mobile sidenav-->
       <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="">New Task</a></li>
+        <li><a href="{{ url_for('add_task') }}">New Task</a></li>
         <li><a href="{{ url_for('categories') }}">Categories</a></li>
       </ul>
     </header>
@@ -54,11 +43,7 @@
       <div class="footer-copyright">
         <div class="container">
           For educational purposes only
-          <a
-            class="grey-text text-lighten-4 right"
-            href="https://codeinstitute.net"
-            >&copy; Code Institute</a
-          >
+          <a class="grey-text text-lighten-4 right" href="https://codeinstitute.net">&copy; Code Institute</a>
         </div>
       </div>
     </footer>

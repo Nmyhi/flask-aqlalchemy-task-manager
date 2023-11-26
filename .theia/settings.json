@@ -1,3 +1,6 @@
 {
-    "editor.glyphMargin": true
+    "editor.glyphMargin": true,
+    "less.format.enable": true,
+    "prettier.bracketSameLine": true,
+    "prettier.printWidth": 250
 }
